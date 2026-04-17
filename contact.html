@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Vintage Library - Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <!-- INTERNAL CSS -->
+    <style>
+      .contact-layout {
+        display: flex;
+        gap: 4em;
+        align-items: flex-start;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 3.5em 5%;
+      }
+
+      .contact-sidebar {
+        width: 30%;
+        min-width: 14em;
+      }
+
+      .contact-sidebar-title {
+        font-size: 1.1rem;
+        color: var(--cream);
+        margin-bottom: 1em;
+      }
+
+      .contact-sidebar p {
+        font-size: 0.9rem;
+        color: var(--muted);
+        font-style: italic;
+        line-height: 1.8;
+        margin-bottom: 1.5em;
+      }
+
+      .contact-sidebar-image {
+        width: 100%;
+        filter: sepia(0.4) brightness(0.6);
+        border: 1px solid var(--border);
+        margin-bottom: 0.5em;
+      }
+
+      .contact-info-list {
+        list-style: none;
+        padding: 0;
+        margin: 1.5em 0 0;
+      }
+
+      .contact-info-list li {
+        font-size: 0.82rem;
+        color: var(--muted);
+        padding: 0.6em 0;
+        border-bottom: 1px solid var(--border);
+        letter-spacing: 0.05em;
+      }
+
+      .contact-info-list li span {
+        display: block;
+        font-size: 0.68rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 0.2em;
+      }
+
+      .contact-main {
+        flex: 1;
+      }
+
+      .contact-main h2 {
+        font-size: clamp(1.4rem, 3vw, 2rem);
+        color: var(--cream);
+        margin-bottom: 0.4em;
+      }
+
+      .contact-main > p {
+        font-size: 0.9rem;
+        color: var(--muted);
+        font-style: italic;
+        margin-bottom: 2em;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 1.5em;
+      }
+
+      .form-row .form-group {
+        flex: 1;
+      }
+
+      .form-notice {
+        font-size: 0.78rem;
+        color: var(--muted);
+        font-style: italic;
+        margin-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">The Vintage Library</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="collection.html" class="nav-link">Collection</a></li>
+        <li><a href="authors.html" class="nav-link">Authors</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <p class="page-hero-label">&#10022; Reach Out &#10022;</p>
+      <h1 class="page-hero-title">Contact Us</h1>
+      <p class="page-hero-subtitle">
+        Questions, suggestions, or simply a word from a fellow reader
+      </p>
+    </div>
+
+    <!-- CONTACT LAYOUT -->
+    <div class="contact-layout">
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+        <img
+          src="images/contact.jpg"
+          alt="A vintage writing desk with typewriter"
+          class="contact-sidebar-image"
+          style="border-color: #c8b89a"
+        />
+        <p class="image-credit">
+          Image: vintage writing desk &mdash; public domain via Unsplash
+        </p>
+
+        <h2 class="contact-sidebar-title">Get in Touch</h2>
+        <p>
+          Whether you have a question about a title in our collection, wish to
+          suggest a work for inclusion, or simply want to share your thoughts
+          &mdash; we welcome every letter.
+        </p>
+
+        <ul class="contact-info-list">
+          <li>
+            <span>Response Time</span>
+            Within 3 to 5 working days
+          </li>
+          <li>
+            <span>Collection Suggestions</span>
+            Public domain works only
+          </li>
+          <li>
+            <span>All PDFs</span>
+            Sourced from Internet Archive
+          </li>
+        </ul>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-main">
+        <h2>Send a Message</h2>
+        <p>All fields marked with &#42; are required.</p>
+
+        <form
+          action="#"
+          method="post"
+          class="contact-form"
+          style="padding: 0; max-width: 100%"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name" class="form-label"
+                >First Name &#42;</label
+              >
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="form-input"
+                placeholder="Your first name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name" class="form-label">Last Name &#42;</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                class="form-input"
+                placeholder="Your last name"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address &#42;</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="your@email.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject &#42;</label>
+            <select id="subject" name="subject" class="form-select">
+              <option value="">Select a subject...</option>
+              <option value="general">General Enquiry</option>
+              <option value="suggestion">Book Suggestion</option>
+              <option value="download">Download Issue</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message &#42;</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-textarea"
+              placeholder="Write your message here..."
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Send Message" class="form-submit" />
+
+          <p class="form-notice">
+            &#10022; This library is a student project. Messages submitted via
+            this form are not monitored.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p class="footer-logo">The Vintage Library</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="authors.html">Authors</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-note">
+        All works are in the public domain. PDFs sourced from
+        <a href="https://archive.org" target="_blank">Internet Archive</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Vintage Library</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <style>
+      /* Hero section the internal CSS */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        padding: 60px 20px;
+        overflow: hidden;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("images/hero.jpg");
+        background-size: cover;
+        background-position: center;
+        filter: brightness(0.18) sepia(0.6);
+        z-index: 0;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+      .hero-ornament {
+        font-size: 1.2rem;
+        color: var(--gold);
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        opacity: 0.8;
+      }
+
+      .hero-title {
+        font-family: "IM Fell English", "Palatino Linotype", Georgia, serif;
+        font-size: clamp(3rem, 8vw, 7rem);
+        color: var(--cream);
+        line-height: 1;
+        margin: 0 0 16px 0;
+        text-shadow: 0 4px 40px rgba(0, 0, 0, 0.8);
+        letter-spacing: 0.02em;
+      }
+
+      .hero-subtitle {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+        color: var(--parchment);
+        font-style: italic;
+        letter-spacing: 0.15em;
+        margin-bottom: 48px;
+        opacity: 0.85;
+      }
+
+      .hero-divider {
+        width: 120px;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--gold),
+          transparent
+        );
+        margin: 0 auto 48px;
+      }
+
+      .hero-cta {
+        display: inline-block;
+        padding: 14px 40px;
+        border: 1px solid var(--gold);
+        color: var(--gold);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 1rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition:
+          background 0.3s,
+          color 0.3s;
+      }
+
+      .hero-cta:hover {
+        background: var(--gold);
+        color: var(--ink);
+      }
+      /* Featured section */
+      .featured-section {
+        padding: 80px 40px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 56px;
+      }
+
+      .section-label {
+        font-size: 0.75rem;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 12px;
+      }
+
+      .section-title {
+        font-family: "IM Fell English", "Palatino Linotype", Georgia, serif;
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
+        color: var(--cream);
+        margin: 0;
+      }
+
+      .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 32px;
+      }
+
+      .book-card {
+        text-decoration: none;
+        display: block;
+        transition: transform 0.3s;
+      }
+
+      .book-card:hover {
+        transform: translateY(-6px);
+      }
+
+      .book-cover {
+        width: 100%;
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        display: block;
+        border: 1px solid var(--border);
+        filter: sepia(0.3) brightness(0.85);
+        transition: filter 0.3s;
+      }
+
+      .book-card:hover .book-cover {
+        filter: sepia(0.1) brightness(1);
+      }
+
+      .book-card-info {
+        padding: 16px 4px 0;
+      }
+
+      .book-card-title {
+        font-family: "IM Fell English", Georgia, serif;
+        font-size: 1.05rem;
+        color: var(--cream);
+        margin: 0 0 4px;
+      }
+
+      .book-card-author {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 0.85rem;
+        color: var(--muted);
+        font-style: italic;
+      }
+      .quote-section {
+        padding: 80px 40px;
+        text-align: center;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .pull-quote {
+        font-family: "IM Fell English", Georgia, serif;
+        font-size: clamp(1.3rem, 3vw, 2rem);
+        color: var(--parchment);
+        font-style: italic;
+        max-width: 700px;
+        margin: 0 auto 20px;
+        line-height: 1.7;
+      }
+
+      .quote-attribution {
+        font-size: 0.8rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+    </style>
+  </head>
+  <body>
+    <!--navigation-->
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">The Vintage Library</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="collection.html" class="nav-link">Collection</a></li>
+        <li><a href="authors.html" class="nav-link">Authors</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <!--hero-->
+    <div class="hero">
+      <div class="hero-content">
+        <p class="hero-ornament">&#10022; Est. MMXXVI &#10022;</p>
+        <h1 class="hero-title">The Vintage<br />Library</h1>
+        <p class="hero-subtitle">A sanctuary of shadow &amp; forgotten prose</p>
+        <div class="hero-divider"></div>
+        <a href="collection.html" class="hero-cta">Enter the Collection</a>
+      </div>
+    </div>
+    <!--featured books-->
+    <div class="featured-section">
+      <div class="section-header">
+        <p class="section-label">&#10022; From the Shelves &#10022;</p>
+        <h2 class="section-title">Featured Volumes</h2>
+      </div>
+
+      <div class="featured-grid">
+        <a href="book-frankenstein.html" class="book-card">
+          <img
+            src="images/frankenstein.jpg"
+            alt="Frankenstein book cover - Mary Shelley, 1818"
+            class="book-cover"
+          />
+          <div class="book-card-info">
+            <h3 class="book-card-title">Frankenstein</h3>
+            <p class="book-card-author">Mary Shelley, 1818</p>
+          </div>
+        </a>
+        <!--in line css-->
+        <a href="book-dorian-gray.html" class="book-card">
+          <img
+            src="images/dorian-gray.jpg"
+            alt="The Picture of Dorian Gray book cover - Oscar Wilde, 1890"
+            class="book-cover"
+            style="border-color: #8b6914"
+          />
+          <div class="book-card-info">
+            <h3 class="book-card-title">The Picture of Dorian Gray</h3>
+            <p class="book-card-author">Oscar Wilde, 1890</p>
+          </div>
+        </a>
+
+        <a href="book-brothers-karamazov.html" class="book-card">
+          <img
+            src="images/brothers-karamazov.jpg"
+            alt="The Brothers Karamazov book cover - Fyodor Dostoevsky, 1880"
+            class="book-cover"
+          />
+          <div class="book-card-info">
+            <h3 class="book-card-title">The Brothers Karamazov</h3>
+            <p class="book-card-author">Fyodor Dostoevsky, 1880</p>
+          </div>
+        </a>
+
+        <a href="book-the-monk.html" class="book-card">
+          <img
+            src="images/the-monk.jpg"
+            alt="The Monk book cover - Matthew Lewis, 1796"
+            class="book-cover"
+          />
+          <div class="book-card-info">
+            <h3 class="book-card-title">The Monk</h3>
+            <p class="book-card-author">Matthew Lewis, 1796</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- quotes-->
+    <div class="quote-section">
+      <p class="pull-quote">
+        &ldquo;The books that the world calls immoral are the books that show
+        the world its own shame.&rdquo;
+      </p>
+      <p class="quote-attribution">&#8212; Oscar Wilde</p>
+    </div>
+    <!-- footer -->
+    <footer class="site-footer">
+      <p class="footer-logo">The Vintage Library</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="authors.html">Authors</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-note">
+        All works are in the public domain. PDFs sourced from
+        <a href="https://archive.org" target="_blank">Internet Archive</a>.
+      </p>
+    </footer>
+  </body>
+</html>

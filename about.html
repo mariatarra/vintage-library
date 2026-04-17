@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Vintage Library - About</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <!-- internal CSS -->
+    <style>
+      .about-lead {
+        font-family: "IM Fell English", Georgia, serif;
+        font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+        color: var(--parchment);
+        font-style: italic;
+        line-height: 1.7;
+        margin-bottom: 1.8em;
+      }
+
+      .about-body {
+        font-size: 1rem;
+        line-height: 1.9;
+        color: var(--text);
+        margin-bottom: 1.4em;
+      }
+
+      .about-section-title {
+        font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+        color: var(--cream);
+        margin: 2.5em 0 0.8em;
+      }
+
+      .values-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2em;
+      }
+
+      .values-list li {
+        padding: 0.9em 0;
+        border-bottom: 1px solid var(--border);
+        color: var(--text);
+        display: flex;
+        gap: 1.2em;
+        align-items: flex-start;
+      }
+
+      .values-list li::before {
+        content: "\2726";
+        color: var(--gold);
+        font-size: 0.7rem;
+        margin-top: 0.4em;
+        flex-shrink: 0;
+      }
+
+      .about-cta {
+        display: inline-block;
+        margin-top: 1em;
+        padding: 0.8em 2.2em;
+        border: 1px solid var(--gold);
+        color: var(--gold);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 0.85rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition:
+          background 0.3s,
+          color 0.3s;
+      }
+
+      .about-cta:hover {
+        background-color: var(--gold);
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .about-image-block {
+        margin: 2.5em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">The Vintage Library</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="collection.html" class="nav-link">Collection</a></li>
+        <li><a href="authors.html" class="nav-link">Authors</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- hero front -->
+    <div class="page-hero">
+      <p class="page-hero-label">&#10022; Our Story &#10022;</p>
+      <h1 class="page-hero-title">About the Library</h1>
+      <p class="page-hero-subtitle">
+        A sanctuary built for those who read by candlelight
+      </p>
+    </div>
+
+    <div class="content-section">
+      <p class="about-lead">
+        The Vintage Library was conceived as a refuge &mdash; a place apart from
+        the noise of the present, where literature that unsettles, provokes, and
+        endures can be found, read, and kept.
+      </p>
+
+      <p class="about-body">
+        There is a certain kind of book that does not comfort. It does not offer
+        resolution or reassurance. Instead it opens a door into the darker
+        corridors of human experience &mdash; corridors that most literature
+        prefers to leave unlit. These are the books collected here. Not horror
+        for its own sake, but works of profound literary ambition that happened
+        to require darkness as their medium.
+      </p>
+
+      <p class="about-body">
+        The four works housed in this library span three centuries and four
+        countries. They were written by authors who lived at the edge of their
+        societies &mdash; a teenage girl at a Swiss lakeside, an Irish wit in
+        Victorian London, a Russian prisoner returned from Siberia, a
+        nineteen-year-old diplomat in The Hague. Each found in fiction a space
+        to say what could not otherwise be said.
+      </p>
+
+      <div class="ornament-divider">
+        &#10022; &nbsp; &#10022; &nbsp; &#10022;
+      </div>
+
+      <h2 class="about-section-title">Our Mission</h2>
+
+      <p class="about-body">
+        The Vintage Library exists to make great works of dark and gothic
+        literature freely accessible. Every title in our collection is in the
+        public domain, sourced from Project Gutenberg, and available to download
+        at no cost. We believe that literature &mdash; especially the difficult
+        kind &mdash; should belong to everyone.
+      </p>
+
+      <p class="about-body">
+        Beyond access, we aim to provide context. Each volume comes with a
+        description of the work and a profile of its author, so that readers can
+        approach these texts with an understanding of the world that produced
+        them.
+      </p>
+
+      <!-- image with in-line css -->
+      <div class="about-image-block">
+        <img
+          src="images/about.jpg"
+          alt="Aged books stacked on a dark wooden shelf in candlelight"
+          style="
+            width: 100%;
+            filter: sepia(0.4) brightness(0.6);
+            border: 1px solid #3a2e1e;
+          "
+        />
+        <p class="image-credit">
+          Image: aged books on dark shelves &mdash; public domain via Unsplash
+        </p>
+      </div>
+
+      <h2 class="about-section-title">What We Value</h2>
+
+      <ul class="values-list">
+        <li>
+          Literature that takes darkness seriously, not as spectacle but as a
+          means of understanding the human condition.
+        </li>
+        <li>
+          Free and open access to public domain works without barriers, fees, or
+          registration.
+        </li>
+        <li>
+          Context and care &mdash; every book is presented with author history
+          and literary background.
+        </li>
+        <li>
+          A reading experience that respects the atmosphere of the works it
+          houses.
+        </li>
+        <li>
+          Preservation of texts that have shaped the Gothic and philosophical
+          literary traditions.
+        </li>
+      </ul>
+
+      <div class="ornament-divider">
+        &#10022; &nbsp; &#10022; &nbsp; &#10022;
+      </div>
+
+      <h2 class="about-section-title">Begin Reading</h2>
+
+      <p class="about-body">
+        The collection is small by design. Every volume here has been chosen
+        with intention. Browse the shelves, read about the authors, and take
+        whatever you need.
+      </p>
+
+      <a href="collection.html" class="about-cta">Browse the Collection</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p class="footer-logo">The Vintage Library</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="authors.html">Authors</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-note">
+        All works are in the public domain. PDFs sourced from
+        <a href="https://archive.org" target="_blank">Internet Archive</a>.
+      </p>
+    </footer>
+  </body>
+</html>

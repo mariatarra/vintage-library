@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Vintage Library - Collection</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <style>
+      .collection-intro {
+        max-width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 3em 5% 0;
+        font-style: italic;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      .collection-filter-label {
+        text-align: center;
+        font-size: 0.72rem;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin: 2em 0 0.5em;
+      }
+
+      .collection-divider {
+        width: 4em;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--gold),
+          transparent
+        );
+        margin: 1.5em auto 0;
+      }
+
+      /* Nested list section */
+      .genres-section {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 3em 5%;
+        border-top: 1px solid var(--border);
+      }
+
+      .genres-section h2 {
+        font-size: clamp(1.4rem, 3vw, 2rem);
+        margin-bottom: 1.5em;
+        color: var(--cream);
+      }
+
+      .genre-tag {
+        display: inline-block;
+        font-size: 0.72rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        border: 1px solid var(--border);
+        padding: 0.2em 0.6em;
+        margin-left: 0.5em;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">The Vintage Library</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li>
+          <a href="collection.html" class="nav-link active">Collection</a>
+        </li>
+        <li><a href="authors.html" class="nav-link">Authors</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <p class="page-hero-label">&#10022; The Shelves &#10022;</p>
+      <h1 class="page-hero-title">The Collection</h1>
+      <p class="page-hero-subtitle">
+        Four volumes of darkness, philosophy &amp; the Gothic imagination
+      </p>
+    </div>
+
+    <!-- INTRO -->
+    <p class="collection-intro">
+      Each volume housed within these walls has been chosen for its power to
+      unsettle, illuminate, and endure. Select a title to learn more and
+      download your copy.
+    </p>
+
+    <p class="collection-filter-label">&#10022; Browse All Volumes &#10022;</p>
+    <div class="collection-divider"></div>
+
+    <!-- BOOK GRID -->
+    <div class="collection-grid">
+      <a href="book-frankenstein.html" class="collection-card">
+        <img
+          src="images/frankenstein.jpg"
+          alt="Frankenstein book cover - Mary Shelley, 1818"
+          class="collection-card-cover"
+        />
+        <div class="collection-card-body">
+          <h2 class="collection-card-title">Frankenstein</h2>
+          <p class="collection-card-author">Mary Shelley &mdash; 1818</p>
+        </div>
+      </a>
+
+      <a href="book-dorian-gray.html" class="collection-card">
+        <!-- INLINE CSS example -->
+        <img
+          src="images/dorian-gray.jpg"
+          alt="The Picture of Dorian Gray book cover - Oscar Wilde, 1890"
+          class="collection-card-cover"
+          style="border-color: #8b6914"
+        />
+        <div class="collection-card-body">
+          <h2 class="collection-card-title">The Picture of Dorian Gray</h2>
+          <p class="collection-card-author">Oscar Wilde &mdash; 1890</p>
+        </div>
+      </a>
+
+      <a href="book-brothers-karamazov.html" class="collection-card">
+        <img
+          src="images/brothers-karamazov.jpg"
+          alt="The Brothers Karamazov book cover - Fyodor Dostoevsky, 1880"
+          class="collection-card-cover"
+        />
+        <div class="collection-card-body">
+          <h2 class="collection-card-title">The Brothers Karamazov</h2>
+          <p class="collection-card-author">Fyodor Dostoevsky &mdash; 1880</p>
+        </div>
+      </a>
+
+      <a href="book-the-monk.html" class="collection-card">
+        <img
+          src="images/the-monk.jpg"
+          alt="The Monk book cover - Matthew Lewis, 1796"
+          class="collection-card-cover"
+        />
+        <div class="collection-card-body">
+          <h2 class="collection-card-title">The Monk</h2>
+          <p class="collection-card-author">Matthew Lewis &mdash; 1796</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- GENRES NESTED LIST (fulfils nested list requirement) -->
+    <div class="genres-section">
+      <h2>Genres &amp; Themes</h2>
+      <ul class="nested-list">
+        <li>
+          Gothic Fiction <span class="genre-tag">Dark</span>
+          <ul>
+            <li>Frankenstein &mdash; Mary Shelley</li>
+            <li>The Monk &mdash; Matthew Lewis</li>
+          </ul>
+        </li>
+        <li>
+          Philosophical Novel <span class="genre-tag">Classical</span>
+          <ul>
+            <li>The Picture of Dorian Gray &mdash; Oscar Wilde</li>
+            <li>The Brothers Karamazov &mdash; Fyodor Dostoevsky</li>
+          </ul>
+        </li>
+        <li>
+          Themes &amp; Motifs <span class="genre-tag">Cross-Collection</span>
+          <ul>
+            <li>Morality &amp; the corrupted soul</li>
+            <li>Creation, monstrosity &amp; responsibility</li>
+            <li>Faith, doubt &amp; existential suffering</li>
+            <li>Forbidden desire &amp; transgression</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p class="footer-logo">The Vintage Library</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="authors.html">Authors</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-note">
+        All works are in the public domain. PDFs sourced from
+        <a href="https://archive.org" target="_blank">Internet Archive</a>
+      </p>
+    </footer>
+  </body>
+</html>

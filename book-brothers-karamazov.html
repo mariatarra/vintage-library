@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Vintage Library - The Brothers Karamazov &mdash; Fyodor Dostoevsky
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <!-- INTERNAL CSS -->
+    <style>
+      .book-meta-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2em;
+        font-size: 0.85rem;
+        letter-spacing: 0.05em;
+      }
+
+      .book-meta-list li {
+        padding: 0.5em 0;
+        border-bottom: 1px solid var(--border);
+        color: var(--muted);
+        display: flex;
+        gap: 1em;
+      }
+
+      .book-meta-list li span:first-child {
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 0.72rem;
+        color: var(--gold);
+        min-width: 6em;
+      }
+
+      .back-link {
+        display: inline-block;
+        font-size: 0.78rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--muted);
+        text-decoration: none;
+        margin-bottom: 2em;
+      }
+
+      .back-link:hover {
+        color: var(--gold);
+        text-decoration: none;
+      }
+
+      .back-link::before {
+        content: "\2190  ";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="main-nav">
+      <a href="index.html" class="nav-logo">The Vintage Library</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li>
+          <a href="collection.html" class="nav-link active">Collection</a>
+        </li>
+        <li><a href="authors.html" class="nav-link">Authors</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- BOOK DETAIL -->
+    <div class="book-detail">
+      <div>
+        <img
+          src="images/brothers-karamazov.jpg"
+          alt="The Brothers Karamazov book cover - Fyodor Dostoevsky, 1880"
+          class="book-detail-cover"
+          style="box-shadow: 0 1em 3em rgba(0, 0, 0, 0.6)"
+        />
+        <p class="image-credit">Cover image: made with Canva</p>
+      </div>
+
+      <div class="book-detail-info">
+        <a href="collection.html" class="back-link">Back to Collection</a>
+
+        <h1 class="book-detail-title">The Brothers Karamazov</h1>
+        <p class="book-detail-author">Fyodor Dostoevsky</p>
+        <p class="book-detail-year">
+          &#10022; 1880 &nbsp;&bull;&nbsp; Philosophical Novel
+          &nbsp;&bull;&nbsp; Public Domain &#10022;
+        </p>
+
+        <div class="book-divider"></div>
+
+        <p class="book-detail-description">
+          Dostoevsky's final novel, completed just months before his death in
+          1881, is widely regarded as one of the greatest works of literature
+          ever written. Set in 19th-century Russia, The Brothers Karamazov
+          follows the three sons of the dissolute landowner Fyodor Pavlovich
+          Karamazov — the passionate Dmitri, the intellectual Ivan, and the
+          devout Alyosha — as they are drawn into a web of parricide, passion,
+          and moral crisis.
+        </p>
+
+        <p class="book-detail-description">
+          At its core, the novel is a profound inquiry into faith, free will,
+          suffering, and the existence of God. Ivan's philosophical rebellion
+          against divine order, expressed in his haunting poem "The Grand
+          Inquisitor," stands as one of literature's most devastating challenges
+          to religious belief. Yet Dostoevsky answers it not with argument, but
+          with the quiet, luminous presence of Alyosha — a counterpoint built on
+          love rather than logic.
+        </p>
+
+        <ul class="book-meta-list">
+          <li>
+            <span>Author</span><span>Fyodor Mikhailovich Dostoevsky</span>
+          </li>
+          <li>
+            <span>Published</span
+            ><span>1879&ndash;1880 (serialised), 1880 (novel)</span>
+          </li>
+          <li>
+            <span>Genre</span
+            ><span>Philosophical Fiction, Psychological Realism</span>
+          </li>
+          <li>
+            <span>Language</span
+            ><span>Russian (English translation by Constance Garnett)</span>
+          </li>
+          <li>
+            <span>Source</span><span>Internet Archive &mdash; archive.org</span>
+          </li>
+          <li>
+            <span>License</span
+            ><span>Public Domain &mdash; no copyright restrictions</span>
+          </li>
+        </ul>
+
+        <a
+          href="pdfs/brothers-karamazov.pdf"
+          download="The_Brothers_Karamazov_Dostoevsky.pdf"
+          class="download-btn"
+        >
+          &#8659; Download PDF
+        </a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p class="footer-logo">The Vintage Library</p>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="authors.html">Authors</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-note">
+        All works are in the public domain. PDFs sourced from
+        <a href="https://archive.org" target="_blank">Internet Archive</a>.
+      </p>
+    </footer>
+  </body>
+</html>
