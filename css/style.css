@@ -1,21 +1,6 @@
 /* --- 1. Google Fonts Import --- */
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
-/* --- 2. CSS Variables --- */
-:root {
-  --ink:        #0e0b07;
-  --dark:       #141009;
-  --surface:    #1c1610;
-  --surface2:   #231d14;
-  --border:     #3a2e1e;
-  --gold:       #c9963a;
-  --gold-light: #e8b96a;
-  --cream:      #f0e8d5;
-  --parchment:  #d4c4a0;
-  --muted:      #8a7a5e;
-  --text:       #c8b89a;
-}
-
 /* --- Base --- */
 * {
   margin: 0;
@@ -28,8 +13,8 @@ html {
 }
 
 body {
-  background-color: var(--ink);
-  color: var(--text);
+  background-color: #0e0b07;
+  color: #c8b89a;
   font-family: 'Cormorant Garamond', 'Palatino Linotype', Georgia, serif;
   font-size: 1.05rem;
   line-height: 1.75;
@@ -39,22 +24,22 @@ body {
 h1, h2, h3, h4 {
   font-family: 'IM Fell English', 'Palatino Linotype', Georgia, serif;
   font-weight: normal;
-  color: var(--cream);
+  color: #f0e8d5;
   line-height: 1.2;
 }
 
 p {
   margin-bottom: 1.2em;
-  color: var(--text);
+  color: #c8b89a;
 }
 
 a {
-  color: var(--gold);
+  color: #c9963a;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--gold-light);
+  color: #e8b96a;
   text-decoration: underline;
 }
 
@@ -71,7 +56,7 @@ ul, ol {
 
 li {
   margin-bottom: 0.4em;
-  color: var(--text);
+  color: #c8b89a;
 }
 
 /* ---  Navigation --- */
@@ -86,20 +71,20 @@ li {
   justify-content: space-between;
   padding: 1.1em 5%;
   background-color: rgba(14, 11, 7, 0.92);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid #3a2e1e;
   backdrop-filter: blur(6px);
 }
 
 .nav-logo {
   font-family: 'IM Fell English', Georgia, serif;
   font-size: 1.15rem;
-  color: var(--cream);
+  color: #f0e8d5;
   text-decoration: none;
   letter-spacing: 0.05em;
 }
 
 .nav-logo:hover {
-  color: var(--gold);
+  color: #c9963a;
   text-decoration: none;
 }
 
@@ -115,21 +100,21 @@ li {
   font-size: 0.78rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #8a7a5e;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--gold);
+  color: #c9963a;
   text-decoration: none;
 }
 
 /* --- 6. Footer --- */
 .site-footer {
-  background-color: var(--dark);
-  border-top: 1px solid var(--border);
+  background-color: #141009;
+  border-top: 1px solid #3a2e1e;
   padding: 3em 5%;
   text-align: center;
 }
@@ -137,7 +122,7 @@ li {
 .footer-logo {
   font-family: 'IM Fell English', Georgia, serif;
   font-size: 1.3rem;
-  color: var(--cream);
+  color: #f0e8d5;
   margin-bottom: 1.2em;
 }
 
@@ -159,51 +144,51 @@ li {
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #8a7a5e;
 }
 
 .footer-nav a:hover {
-  color: var(--gold);
+  color: #c9963a;
   text-decoration: none;
 }
 
 .footer-note {
   font-size: 0.8rem;
-  color: var(--muted);
+  color: #8a7a5e;
   margin: 0;
   font-style: italic;
 }
 
 .footer-note a {
-  color: var(--gold);
+  color: #c9963a;
 }
 
-/* --- 7. Page Hero (inner pages) --- */
-.page-hero {
+/* --- 7. Page Intro (inner pages) --- */
+.page-intro {
   padding: 8.5em 5% 3.5em;
   text-align: center;
-  border-bottom: 1px solid var(--border);
-  background-color: var(--dark);
+  border-bottom: 1px solid #3a2e1e;
+  background-color: #141009;
 }
 
-.page-hero-label {
+.page-intro-label {
   font-size: 0.72rem;
   letter-spacing: 0.4em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #c9963a;
   margin-bottom: 1em;
 }
 
-.page-hero-title {
+.page-intro-title {
   font-family: 'IM Fell English', Georgia, serif;
   font-size: clamp(2rem, 5vw, 3.5rem);
-  color: var(--cream);
+  color: #f0e8d5;
   margin-bottom: 0.5em;
 }
 
-.page-hero-subtitle {
+.page-intro-subtitle {
   font-style: italic;
-  color: var(--muted);
+  color: #8a7a5e;
   font-size: 1rem;
 }
 
@@ -232,14 +217,14 @@ li {
   width: 100%;
   aspect-ratio: 2/3;
   object-fit: cover;
-  border: 1px solid var(--border);
+  border: 1px solid #3a2e1e;
   filter: sepia(0.35) brightness(0.8);
   transition: filter 0.3s, border-color 0.3s;
 }
 
 .collection-card:hover .collection-card-cover {
   filter: sepia(0.1) brightness(1);
-  border-color: var(--gold);
+  border-color: #c9963a;
 }
 
 .collection-card-body {
@@ -249,14 +234,14 @@ li {
 .collection-card-title {
   font-family: 'IM Fell English', Georgia, serif;
   font-size: 1rem;
-  color: var(--cream);
+  color: #f0e8d5;
   margin-bottom: 0.25em;
 }
 
 .collection-card-author {
   font-size: 0.82rem;
   font-style: italic;
-  color: var(--muted);
+  color: #8a7a5e;
   margin: 0;
 }
 
@@ -273,7 +258,7 @@ li {
 .book-detail-cover {
   width: 100%;
   min-width: 12em;
-  border: 1px solid var(--border);
+  border: 1px solid #3a2e1e;
   filter: sepia(0.2) brightness(0.9);
 }
 
@@ -283,14 +268,14 @@ li {
 
 .book-detail-title {
   font-size: clamp(1.8rem, 4vw, 2.8rem);
-  color: var(--cream);
+  color: #f0e8d5;
   margin-bottom: 0.3em;
 }
 
 .book-detail-author {
   font-size: 1.1rem;
   font-style: italic;
-  color: var(--gold);
+  color: #c9963a;
   margin-bottom: 0.25em;
 }
 
@@ -298,21 +283,21 @@ li {
   font-size: 0.8rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: #8a7a5e;
   margin-bottom: 2em;
 }
 
 .book-divider {
   width: 4em;
   height: 1px;
-  background-color: var(--gold);
+  background-color: #c9963a;
   margin-bottom: 2em;
 }
 
 .book-detail-description {
   font-size: 1rem;
   line-height: 1.85;
-  color: var(--text);
+  color: #c8b89a;
   margin-bottom: 2em;
 }
 
@@ -320,8 +305,8 @@ li {
   display: inline-block;
   padding: 0.8em 2.2em;
   background-color: transparent;
-  border: 1px solid var(--gold);
-  color: var(--gold);
+  border: 1px solid #c9963a;
+  color: #c9963a;
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.85rem;
   letter-spacing: 0.25em;
@@ -331,8 +316,8 @@ li {
 }
 
 .download-btn:hover {
-  background-color: var(--gold);
-  color: var(--ink);
+  background-color: #c9963a;
+  color: #0e0b07;
   text-decoration: none;
 }
 
@@ -356,22 +341,22 @@ li {
   font-size: 0.75rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #c9963a;
   padding: 0.9em 1em;
-  border-bottom: 1px solid var(--gold);
+  border-bottom: 1px solid #c9963a;
   text-align: left;
 }
 
 .styled-table td {
   padding: 0.9em 1em;
-  border-bottom: 1px solid var(--border);
-  color: var(--text);
+  border-bottom: 1px solid #3a2e1e;
+  color: #c8b89a;
   vertical-align: top;
 }
 
 .styled-table tr:hover td {
-  background-color: var(--surface);
-  color: var(--cream);
+  background-color: #1c1610;
+  color: #f0e8d5;
 }
 
 /* --- 11. Nested List Styles --- */
@@ -382,7 +367,7 @@ li {
 
 .nested-list > li {
   margin-bottom: 1em;
-  color: var(--cream);
+  color: #f0e8d5;
   font-family: 'IM Fell English', Georgia, serif;
   font-size: 1rem;
 }
@@ -396,7 +381,7 @@ li {
 .nested-list > li > ul > li {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.95rem;
-  color: var(--text);
+  color: #c8b89a;
   margin-bottom: 0.25em;
 }
 
@@ -416,7 +401,7 @@ li {
   font-size: 0.72rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: #c9963a;
   margin-bottom: 0.5em;
 }
 
@@ -425,9 +410,9 @@ li {
 .form-select {
   width: 100%;
   padding: 0.75em 1em;
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--cream);
+  background-color: #1c1610;
+  border: 1px solid #3a2e1e;
+  color: #f0e8d5;
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1rem;
   outline: none;
@@ -437,7 +422,7 @@ li {
 .form-input:focus,
 .form-textarea:focus,
 .form-select:focus {
-  border-color: var(--gold);
+  border-color: #c9963a;
 }
 
 .form-textarea {
@@ -448,8 +433,8 @@ li {
 .form-submit {
   padding: 0.8em 2.5em;
   background-color: transparent;
-  border: 1px solid var(--gold);
-  color: var(--gold);
+  border: 1px solid #c9963a;
+  color: #c9963a;
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.85rem;
   letter-spacing: 0.25em;
@@ -459,8 +444,8 @@ li {
 }
 
 .form-submit:hover {
-  background-color: var(--gold);
-  color: var(--ink);
+  background-color: #c9963a;
+  color: #0e0b07;
 }
 
 /* --- 13. General Content Section --- */
@@ -472,7 +457,7 @@ li {
 
 .ornament-divider {
   text-align: center;
-  color: var(--gold);
+  color: #c9963a;
   font-size: 1rem;
   letter-spacing: 0.5em;
   margin: 2.5em 0;
@@ -482,7 +467,7 @@ li {
 /* --- 14. Image Credits --- */
 .image-credit {
   font-size: 0.72rem;
-  color: var(--muted);
+  color: #8a7a5e;
   font-style: italic;
   margin-top: 0.4em;
   text-align: center;

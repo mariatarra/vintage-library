@@ -25,13 +25,13 @@
 
       .contact-sidebar-title {
         font-size: 1.1rem;
-        color: var(--cream);
+        color: #f0e8d5;
         margin-bottom: 1em;
       }
 
       .contact-sidebar p {
         font-size: 0.9rem;
-        color: var(--muted);
+        color: #8a7a5e;
         font-style: italic;
         line-height: 1.8;
         margin-bottom: 1.5em;
@@ -40,7 +40,7 @@
       .contact-sidebar-image {
         width: 100%;
         filter: sepia(0.4) brightness(0.6);
-        border: 1px solid var(--border);
+        border: 1px solid #3a2e1e;
         margin-bottom: 0.5em;
       }
 
@@ -52,9 +52,9 @@
 
       .contact-info-list li {
         font-size: 0.82rem;
-        color: var(--muted);
+        color: #8a7a5e;
         padding: 0.6em 0;
-        border-bottom: 1px solid var(--border);
+        border-bottom: 1px solid #3a2e1e;
         letter-spacing: 0.05em;
       }
 
@@ -63,7 +63,7 @@
         font-size: 0.68rem;
         letter-spacing: 0.25em;
         text-transform: uppercase;
-        color: var(--gold);
+        color: #c9963a;
         margin-bottom: 0.2em;
       }
 
@@ -73,13 +73,13 @@
 
       .contact-main h2 {
         font-size: clamp(1.4rem, 3vw, 2rem);
-        color: var(--cream);
+        color: #f0e8d5;
         margin-bottom: 0.4em;
       }
 
       .contact-main > p {
         font-size: 0.9rem;
-        color: var(--muted);
+        color: #8a7a5e;
         font-style: italic;
         margin-bottom: 2em;
       }
@@ -95,9 +95,26 @@
 
       .form-notice {
         font-size: 0.78rem;
-        color: var(--muted);
+        color: #8a7a5e;
         font-style: italic;
         margin-top: 1em;
+      }
+
+      @media (max-width: 48em) {
+        .contact-layout {
+          flex-direction: column;
+          padding: 2.5em 5%;
+          gap: 2em;
+        }
+
+        .contact-sidebar {
+          width: 100%;
+        }
+
+        .form-row {
+          flex-direction: column;
+          gap: 0;
+        }
       }
     </style>
   </head>
@@ -114,11 +131,11 @@
       </ul>
     </nav>
 
-    <!-- PAGE HERO -->
-    <div class="page-hero">
-      <p class="page-hero-label">&#10022; Reach Out &#10022;</p>
-      <h1 class="page-hero-title">Contact Us</h1>
-      <p class="page-hero-subtitle">
+    <!-- PAGE INTRO -->
+    <div class="page-intro">
+      <p class="page-intro-label">&#10022; Reach Out &#10022;</p>
+      <h1 class="page-intro-title">Contact Us</h1>
+      <p class="page-intro-subtitle">
         Questions, suggestions, or simply a word from a fellow reader
       </p>
     </div>

@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="icon" href="images/favicon.png" />
     <style>
-      /* Hero section the internal CSS */
-      .hero {
+      /* Intro section the internal CSS */
+      .intro {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -19,7 +19,7 @@
         padding: 60px 20px;
         overflow: hidden;
       }
-      .hero::before {
+      .intro::before {
         content: "";
         position: absolute;
         top: 0;
@@ -32,56 +32,51 @@
         filter: brightness(0.18) sepia(0.6);
         z-index: 0;
       }
-      .hero-content {
+      .intro-content {
         position: relative;
         z-index: 1;
       }
-      .hero-ornament {
+      .intro-ornament {
         font-size: 1.2rem;
-        color: var(--gold);
+        color: #c9963a;
         letter-spacing: 0.4em;
         text-transform: uppercase;
         margin-bottom: 24px;
         opacity: 0.8;
       }
 
-      .hero-title {
+      .intro-title {
         font-family: "IM Fell English", "Palatino Linotype", Georgia, serif;
         font-size: clamp(3rem, 8vw, 7rem);
-        color: var(--cream);
+        color: #f0e8d5;
         line-height: 1;
         margin: 0 0 16px 0;
         text-shadow: 0 4px 40px rgba(0, 0, 0, 0.8);
         letter-spacing: 0.02em;
       }
 
-      .hero-subtitle {
+      .intro-subtitle {
         font-family: "Cormorant Garamond", Georgia, serif;
         font-size: clamp(1rem, 2.5vw, 1.4rem);
-        color: var(--parchment);
+        color: #d4c4a0;
         font-style: italic;
         letter-spacing: 0.15em;
         margin-bottom: 48px;
         opacity: 0.85;
       }
 
-      .hero-divider {
+      .intro-divider {
         width: 120px;
         height: 1px;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          var(--gold),
-          transparent
-        );
+        background: linear-gradient(90deg, transparent, #c9963a, transparent);
         margin: 0 auto 48px;
       }
 
-      .hero-cta {
+      .intro-cta {
         display: inline-block;
         padding: 14px 40px;
-        border: 1px solid var(--gold);
-        color: var(--gold);
+        border: 1px solid #c9963a;
+        color: #c9963a;
         font-family: "Cormorant Garamond", Georgia, serif;
         font-size: 1rem;
         letter-spacing: 0.25em;
@@ -92,9 +87,9 @@
           color 0.3s;
       }
 
-      .hero-cta:hover {
-        background: var(--gold);
-        color: var(--ink);
+      .intro-cta:hover {
+        background: #c9963a;
+        color: #0e0b07;
       }
       /* Featured section */
       .featured-section {
@@ -112,14 +107,14 @@
         font-size: 0.75rem;
         letter-spacing: 0.4em;
         text-transform: uppercase;
-        color: var(--gold);
+        color: #c9963a;
         margin-bottom: 12px;
       }
 
       .section-title {
         font-family: "IM Fell English", "Palatino Linotype", Georgia, serif;
         font-size: clamp(1.8rem, 4vw, 2.8rem);
-        color: var(--cream);
+        color: #f0e8d5;
         margin: 0;
       }
 
@@ -144,7 +139,7 @@
         aspect-ratio: 2/3;
         object-fit: cover;
         display: block;
-        border: 1px solid var(--border);
+        border: 1px solid #3a2e1e;
         filter: sepia(0.3) brightness(0.85);
         transition: filter 0.3s;
       }
@@ -160,27 +155,27 @@
       .book-card-title {
         font-family: "IM Fell English", Georgia, serif;
         font-size: 1.05rem;
-        color: var(--cream);
+        color: #f0e8d5;
         margin: 0 0 4px;
       }
 
       .book-card-author {
         font-family: "Cormorant Garamond", Georgia, serif;
         font-size: 0.85rem;
-        color: var(--muted);
+        color: #8a7a5e;
         font-style: italic;
       }
       .quote-section {
         padding: 80px 40px;
         text-align: center;
-        border-top: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
+        border-top: 1px solid #3a2e1e;
+        border-bottom: 1px solid #3a2e1e;
       }
 
       .pull-quote {
         font-family: "IM Fell English", Georgia, serif;
         font-size: clamp(1.3rem, 3vw, 2rem);
-        color: var(--parchment);
+        color: #d4c4a0;
         font-style: italic;
         max-width: 700px;
         margin: 0 auto 20px;
@@ -191,7 +186,7 @@
         font-size: 0.8rem;
         letter-spacing: 0.3em;
         text-transform: uppercase;
-        color: var(--gold);
+        color: #c9963a;
       }
     </style>
   </head>
@@ -207,14 +202,16 @@
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>
-    <!--hero-->
-    <div class="hero">
-      <div class="hero-content">
-        <p class="hero-ornament">&#10022; Est. MMXXVI &#10022;</p>
-        <h1 class="hero-title">The Vintage<br />Library</h1>
-        <p class="hero-subtitle">A sanctuary of shadow &amp; forgotten prose</p>
-        <div class="hero-divider"></div>
-        <a href="collection.html" class="hero-cta">Enter the Collection</a>
+    <!--intro-->
+    <div class="intro">
+      <div class="intro-content">
+        <p class="intro-ornament">&#10022; Est. MMXXVI &#10022;</p>
+        <h1 class="intro-title">The Vintage<br />Library</h1>
+        <p class="intro-subtitle">
+          A sanctuary of shadow &amp; forgotten prose
+        </p>
+        <div class="intro-divider"></div>
+        <a href="collection.html" class="intro-cta">Enter the Collection</a>
       </div>
     </div>
     <!--featured books-->
