@@ -119,142 +119,144 @@
     </style>
   </head>
   <body>
-    <!-- NAV -->
-    <nav class="main-nav">
-      <a href="index.html" class="nav-logo">The Vintage Library</a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="collection.html" class="nav-link">Collection</a></li>
-        <li><a href="authors.html" class="nav-link">Authors</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="contact.html" class="nav-link active">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- PAGE INTRO -->
-    <div class="page-intro">
-      <p class="page-intro-label">&#10022; Reach Out &#10022;</p>
-      <h1 class="page-intro-title">Contact Us</h1>
-      <p class="page-intro-subtitle">
-        Questions, suggestions, or simply a word from a fellow reader
-      </p>
-    </div>
-
-    <!-- CONTACT LAYOUT -->
-    <div class="contact-layout">
-      <!-- SIDEBAR -->
-      <div class="contact-sidebar">
-        <img
-          src="images/contact.jpg"
-          alt="A vintage writing desk with typewriter"
-          class="contact-sidebar-image"
-          style="border-color: #c8b89a"
-        />
-        <p class="image-credit">
-          Image: vintage writing desk &mdash; public domain via Unsplash
-        </p>
-
-        <h2 class="contact-sidebar-title">Get in Touch</h2>
-        <p>
-          Whether you have a question about a title in our collection, wish to
-          suggest a work for inclusion, or simply want to share your thoughts
-          &mdash; we welcome every letter.
-        </p>
-
-        <ul class="contact-info-list">
-          <li>
-            <span>Response Time</span>
-            Within 3 to 5 working days
-          </li>
-          <li>
-            <span>Collection Suggestions</span>
-            Public domain works only
-          </li>
-          <li>
-            <span>All PDFs</span>
-            Sourced from Internet Archive
-          </li>
+    <header>
+      <!-- NAV -->
+      <nav class="main-nav">
+        <a href="index.html" class="nav-logo">The Vintage Library</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="collection.html" class="nav-link">Collection</a></li>
+          <li><a href="authors.html" class="nav-link">Authors</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
         </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- PAGE INTRO -->
+      <div class="page-intro">
+        <p class="page-intro-label">✦ Reach Out ✦</p>
+        <h1 class="page-intro-title">Contact Us</h1>
+        <p class="page-intro-subtitle">
+          Questions, suggestions, or simply a word from a fellow reader
+        </p>
       </div>
 
-      <!-- FORM -->
-      <div class="contact-main">
-        <h2>Send a Message</h2>
-        <p>All fields marked with &#42; are required.</p>
-
-        <form
-          action="#"
-          method="post"
-          class="contact-form"
-          style="padding: 0; max-width: 100%"
-        >
-          <div class="form-row">
-            <div class="form-group">
-              <label for="first-name" class="form-label"
-                >First Name &#42;</label
-              >
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                class="form-input"
-                placeholder="Your first name"
-              />
-            </div>
-            <div class="form-group">
-              <label for="last-name" class="form-label">Last Name &#42;</label>
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                class="form-input"
-                placeholder="Your last name"
-              />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="email" class="form-label">Email Address &#42;</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              class="form-input"
-              placeholder="your@email.com"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="subject" class="form-label">Subject &#42;</label>
-            <select id="subject" name="subject" class="form-select">
-              <option value="">Select a subject...</option>
-              <option value="general">General Enquiry</option>
-              <option value="suggestion">Book Suggestion</option>
-              <option value="download">Download Issue</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message" class="form-label">Message &#42;</label>
-            <textarea
-              id="message"
-              name="message"
-              class="form-textarea"
-              placeholder="Write your message here..."
-            ></textarea>
-          </div>
-
-          <input type="submit" value="Send Message" class="form-submit" />
-
-          <p class="form-notice">
-            &#10022; This library is a student project. Messages submitted via
-            this form are not monitored.
+      <!-- CONTACT LAYOUT -->
+      <div class="contact-layout">
+        <!-- SIDEBAR -->
+        <div class="contact-sidebar">
+          <img
+            src="images/contact.jpg"
+            alt="A vintage writing desk with typewriter"
+            class="contact-sidebar-image"
+            style="border-color: #c8b89a"
+          />
+          <p class="image-credit">
+            Image: vintage writing desk — public domain via Unsplash
           </p>
-        </form>
-      </div>
-    </div>
 
+          <h2 class="contact-sidebar-title">Get in Touch</h2>
+          <p>
+            Whether you have a question about a title in our collection, wish to
+            suggest a work for inclusion, or simply want to share your thoughts
+            — we welcome every letter.
+          </p>
+
+          <ul class="contact-info-list">
+            <li>
+              <span>Response Time</span>
+              Within 3 to 5 working days
+            </li>
+            <li>
+              <span>Collection Suggestions</span>
+              Public domain works only
+            </li>
+            <li>
+              <span>All PDFs</span>
+              Sourced from Internet Archive
+            </li>
+          </ul>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-main">
+          <h2>Send a Message</h2>
+          <p>All fields marked with * are required.</p>
+
+          <form
+            action="#"
+            method="post"
+            class="contact-form"
+            style="padding: 0; max-width: 100%"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name" class="form-label"
+                  >First Name *</label
+                >
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  class="form-input"
+                  placeholder="Your first name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="last-name" class="form-label">Last Name *</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  class="form-input"
+                  placeholder="Your last name"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="your@email.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject *</label>
+              <select id="subject" name="subject" class="form-select">
+                <option value="">Select a subject...</option>
+                <option value="general">General Enquiry</option>
+                <option value="suggestion">Book Suggestion</option>
+                <option value="download">Download Issue</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+
+            <input type="submit" value="Send Message" class="form-submit" />
+
+            <p class="form-notice">
+              ✦ This library is a student project. Messages submitted via
+              this form are not monitored.
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
     <!-- FOOTER -->
     <footer class="site-footer">
       <p class="footer-logo">The Vintage Library</p>
